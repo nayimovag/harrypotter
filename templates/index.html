@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+{% load static %}
+{% block content %}
+
+
+<h1>Tutorial number 5</h1>
+
+<ul>
+    <li><a href="https://www.google.com">google</a></li>
+    <li><a href="{% url 'city' city='tashkent'%}">city</a></li>
+    <li><a href="{% url 'home-main'%}">home</a></li>
+</ul>
+
+<img src="{%static 'img/dj.png'%}" alt="">
+{% endblock %}
